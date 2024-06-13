@@ -1,0 +1,18 @@
+name: release action
+# Call the reusable workflow release-solution-with-inputs.yml
+# Release your solution to prod when you create a new release.
+
+on:
+  release:
+      types: [created]        
+permissions:
+  contents: write
+jobs:
+  Release-solution-qa:
+    uses: ./.github/workflows/release-solution-to-qa.yml
+    
+    with:
+          
+          QA_ENVIRONMENT_URL: https://org56109a41.crm.dynamics.com/
+    
+    
