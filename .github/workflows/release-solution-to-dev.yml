@@ -1,0 +1,61 @@
+name: release-solution-to-dev
+# Reusable workflow
+# convert solution to managed (using a build PowerPlatform environment for the conversion)
+# upload the solution to the GitHub artifacts and deploy to the Dev environment
+on:
+  workflow_call:
+    inputs: 
+      #Do Not change these values
+      #Values are set by the caller
+      #caller sample: release-action-call.ymnl
+      solution_name:
+        description: 'The solution name.'
+        type: string
+        default: IncidentApp
+      root_folder:
+        description: 'name of the folder where the solution is going unpacked'
+        type: string
+        default: ${{ github.event.repository.name }}
+      zip_folder:
+        description: 'name of the folder where the zip files reside'
+        type: string
+        default: ${{ github.event.repository.name }}
+      DEV_ENVIRONMENT_URL: 
+        description: 'QA environment url.'
+        type: string
+        required: true
+        default: https://org56109a41.crm.dynamics.com/
+      
+  
+permissions:
+  contents: write
+
+jobs:
+  release-to-dev:
+    #needs: [ convert-to-managed ]
+    runs-on: ubuntu-latest
+    env:
+      RUNNER_DEBUG: 1
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        lfs: true
+    - name: who-am-i action
+      uses: microsoft/powerplatform-actions/who-am-i@v0
+      with:
+        environment-url: ${{ inputs.DEV_ENVIRONMENT_URL }}
+        app-id: ${{secrets.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{secrets.TENANT_ID}}
+   
+    - name: Import solution to test env
+      uses: microsoft/powerplatform-actions/import-solution@v0
+      with:
+        environment-url: ${{ inputs.DEV_ENVIRONMENT_URL }}
+        app-id: ${{secrets.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{secrets.TENANT_ID}}
+        solution-file: ${{ inputs.zip_folder}}/${{ inputs.solution_name }}_managed.zip
+        force-overwrite: true
+        publish-changes: true
