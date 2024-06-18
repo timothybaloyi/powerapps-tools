@@ -14,25 +14,27 @@ on:
         description: 'name of the solution to worked on from Power Platform'
         required: true
         default: 'FASB Invoice Tracking'
-       
-      
-    
+      totp_secret:
+        description: 'time based otp secret for poc deploys (use client-secret) '
+        required: true
+        
       
 env:
 #edit your values here
   ENVIRONMENT_URL: ${{ github.event.inputs.solution_name }}
+  TOTP: ${{ github.event.inputs.totp_secret }}
 
 permissions:
   contents: write
 jobs:
   export-from-dev:
     runs-on: ubuntu-latest
-    #runs-on: windows-latest
     # or you can say runs-on: ubuntu-latest
     env:
       RUNNER_DEBUG: 1
 
     steps:
+                
     - uses: actions/checkout@v2
       with:
         lfs: true
@@ -41,18 +43,35 @@ jobs:
       uses: microsoft/powerplatform-actions/who-am-i@v0
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
-        app-id: ${{secrets.CLIENT_ID}}
-        client-secret: ${{ secrets.PowerPlatformSPN }}
-        tenant-id: ${{secrets.TENANT_ID}}
+
+        #just for Demo purposes
+        isRefreshCookies: 1
+        totp: ${{env.TOTP}}
+        userName: ${{ secrets.USER_NAME }}
+        password: ${{ secrets.USER_PASSWORD }}
+
+        #Prefered Auth Method
+        #app-id: ${{secrets.CLIENT_ID}}
+        #client-secret: ${{ secrets.PowerPlatformSPN }}
+        #tenant-id: ${{secrets.TENANT_ID}}
 
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
-        app-id: ${{secrets.CLIENT_ID}}
-        client-secret: ${{ secrets.PowerPlatformSPN }}
-        tenant-id: ${{secrets.TENANT_ID}}
+
+        #just for Demo purposes
+        isRefreshCookies: 1
+        totp: ${{env.TOTP}}
+        userName: ${{ secrets.USER_NAME }}
+        password: ${{ secrets.USER_PASSWORD }}
+        
+        #Prefered Auth Method
+        #app-id: ${{secrets.CLIENT_ID}}
+        #client-secret: ${{ secrets.PowerPlatformSPN }}
+        #tenant-id: ${{secrets.TENANT_ID}}
+        
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}_unmanaged.zip
         overwrite: true
@@ -69,9 +88,18 @@ jobs:
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
             environment-url: ${{env.ENVIRONMENT_URL}}
-            app-id: ${{secrets.CLIENT_ID}}
-            client-secret: ${{ secrets.PowerPlatformSPN }}
-            tenant-id: ${{secrets.TENANT_ID}}
+            
+            #just for Demo purposes
+            isRefreshCookies: 1
+            totp: ${{env.TOTP}}
+            userName: ${{ secrets.USER_NAME }}
+            password: ${{ secrets.USER_PASSWORD }}
+
+            #Prefered Auth Method
+            #app-id: ${{secrets.CLIENT_ID}}
+            #client-secret: ${{ secrets.PowerPlatformSPN }}
+            #tenant-id: ${{secrets.TENANT_ID}}
+            
             solution-name: ${{ github.event.inputs.solution_name }}
             solution-output-file: ${{ github.event.repository.name }}/${{ github.event.inputs.solution_name }}_managed.zip
             overwrite: true
