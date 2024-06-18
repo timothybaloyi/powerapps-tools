@@ -21,7 +21,7 @@ on:
       
 env:
 #edit your values here
-  ENVIRONMENT_URL: ${{ github.event.inputs.solution_name }}
+  ENVIRONMENT_URL: ${{ github.event.inputs.environment_name }}
   #TOTP: ${{ github.event.inputs.totp_secret }}
 
 permissions:
