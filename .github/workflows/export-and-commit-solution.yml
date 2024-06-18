@@ -14,15 +14,11 @@ on:
         description: 'name of the solution to worked on from Power Platform'
         required: true
         default: 'FASB Invoice Tracking'
-      #totp_secret:
-      #  description: 'time based otp secret for poc deploys (use client-secret) '
-      #  required: true
         
       
 env:
 #edit your values here
   ENVIRONMENT_URL: ${{ github.event.inputs.environment_name }}
-  #TOTP: ${{ github.event.inputs.totp_secret }}
 
 permissions:
   contents: write
@@ -44,31 +40,21 @@ jobs:
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
 
-        #just for Demo purposes
-        #totp: ${{env.TOTP}}
-        user-name: ${{ secrets.USER_NAME }}
-        password-secret: ${{ secrets.USER_PASSWORD }}
-
         #Prefered Auth Method
-        #app-id: ${{secrets.CLIENT_ID}}
-        #client-secret: ${{ secrets.PowerPlatformSPN }}
-        #tenant-id: ${{secrets.TENANT_ID}}
+        app-id: ${{secrets.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{secrets.TENANT_ID}}
 
 
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v0
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
-
-        #just for Demo purposes
-        #totp: ${{env.TOTP}}
-        user-name: ${{ secrets.USER_NAME }}
-        password-secret: ${{ secrets.USER_PASSWORD }}
         
         #Prefered Auth Method
-        #app-id: ${{secrets.CLIENT_ID}}
-        #client-secret: ${{ secrets.PowerPlatformSPN }}
-        #tenant-id: ${{secrets.TENANT_ID}}
+        app-id: ${{secrets.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{secrets.TENANT_ID}}
         
         solution-name: ${{ github.event.inputs.solution_name }}
         solution-output-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}_unmanaged.zip
@@ -87,16 +73,10 @@ jobs:
       with:
             environment-url: ${{env.ENVIRONMENT_URL}}
             
-            #just for Demo purposes
-            
-            #totp: ${{env.TOTP}}
-            user-name: ${{ secrets.USER_NAME }}
-            password-secret: ${{ secrets.USER_PASSWORD }}
-
             #Prefered Auth Method
-            #app-id: ${{secrets.CLIENT_ID}}
-            #client-secret: ${{ secrets.PowerPlatformSPN }}
-            #tenant-id: ${{secrets.TENANT_ID}}
+            app-id: ${{secrets.CLIENT_ID}}
+            client-secret: ${{ secrets.PowerPlatformSPN }}
+            tenant-id: ${{secrets.TENANT_ID}}
             
             solution-name: ${{ github.event.inputs.solution_name }}
             solution-output-file: ${{ github.event.repository.name }}/${{ github.event.inputs.solution_name }}_managed.zip
