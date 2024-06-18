@@ -1,0 +1,334 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "citz_sharedcommondataserviceforapps_58f69"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "43fe916f-855b-4e2e-9b73-ea8f74c4b5b4"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "email",
+              "subscriptionRequest/scope": 2
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "List_rows": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "9279fc52-183a-40f2-93b0-09a565e6d5ad"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "activitymimeattachments",
+              "$filter": "objecttypecode eq 'email' and _objectid_value eq '@{triggerOutputs()?['body/activityid']}'"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Condition": {
+          "actions": {
+            "Apply_to_each": {
+              "foreach": "@outputs('List_rows')?['body/value']",
+              "actions": {
+                "Check_Mime_Type": {
+                  "actions": {
+                    "Add_Document_Processing_Task": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "e773161e-c9f3-468d-9f5b-f06cd663b3aa"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps",
+                          "operationId": "CreateRecord",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "citz_documentprocessingtasks",
+                          "item/subject": "@items('Apply_to_each')?['filename']",
+                          "item/citz_mimetype": "@items('Apply_to_each')?['mimetype']",
+                          "item/statuscode": 1
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    },
+                    "Add_to_Queue": {
+                      "runAfter": {
+                        "Update_a_row": [
+                          "Succeeded"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "4c77aedc-9fd0-4935-901e-b580c591a06d"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps",
+                          "operationId": "PerformBoundAction",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "queues",
+                          "actionName": "Microsoft.Dynamics.CRM.AddToQueue",
+                          "recordId": "1be24783-dae6-ee11-a203-002248aff134",
+                          "item/Target": "citz_documentprocessingtasks(@{outputs('Add_Document_Processing_Task')?['body/activityid']})"
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    },
+                    "Upload_a_file_or_an_image": {
+                      "runAfter": {
+                        "Add_Document_Processing_Task": [
+                          "Succeeded"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "91049915-9e72-42a3-94c5-48075221cf62"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps",
+                          "operationId": "UpdateEntityFileImageFieldContent",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "citz_documentprocessingtasks",
+                          "recordId": "@outputs('Add_Document_Processing_Task')?['body/activityid']",
+                          "fileImageFieldName": "citz_filedata",
+                          "item": "@base64ToBinary(items('Apply_to_each')?['body'])",
+                          "x-ms-file-name": "@items('Apply_to_each')?['filename']"
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    },
+                    "Update_a_row": {
+                      "runAfter": {
+                        "Upload_a_file_or_an_image": [
+                          "Succeeded"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "e4702c2f-c37e-4ea4-9f41-682d3aee0d06"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps",
+                          "operationId": "UpdateRecord",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "citz_documentprocessingtasks",
+                          "recordId": "@outputs('Add_Document_Processing_Task')?['body/activityid']",
+                          "item/statuscode": 988440001
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    }
+                  },
+                  "runAfter": {},
+                  "else": {
+                    "actions": {
+                      "Add_Failed_Document_Processing_Task": {
+                        "runAfter": {},
+                        "metadata": {
+                          "operationMetadataId": "acb2efb9-2219-4034-9eaf-5e5c297ab338"
+                        },
+                        "type": "OpenApiConnection",
+                        "inputs": {
+                          "host": {
+                            "connectionName": "shared_commondataserviceforapps",
+                            "operationId": "CreateRecord",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                          },
+                          "parameters": {
+                            "entityName": "citz_documentprocessingtasks",
+                            "item/subject": "@items('Apply_to_each')?['filename']",
+                            "item/citz_mimetype": "@items('Apply_to_each')?['mimetype']",
+                            "item/statuscode": 988440005
+                          },
+                          "authentication": "@parameters('$authentication')"
+                        }
+                      },
+                      "Upload_Failed_File": {
+                        "runAfter": {
+                          "Add_Failed_Document_Processing_Task": [
+                            "Succeeded"
+                          ]
+                        },
+                        "metadata": {
+                          "operationMetadataId": "d52b3074-f828-4f8e-86f2-6594acff0067"
+                        },
+                        "type": "OpenApiConnection",
+                        "inputs": {
+                          "host": {
+                            "connectionName": "shared_commondataserviceforapps",
+                            "operationId": "UpdateEntityFileImageFieldContent",
+                            "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                          },
+                          "parameters": {
+                            "entityName": "citz_documentprocessingtasks",
+                            "recordId": "@outputs('Add_Failed_Document_Processing_Task')?['body/activityid']",
+                            "fileImageFieldName": "citz_filedata",
+                            "item": "@base64ToBinary(items('Apply_to_each')?['Body'])",
+                            "x-ms-file-name": "@outputs('Add_Failed_Document_Processing_Task')?['body/subject']"
+                          },
+                          "authentication": "@parameters('$authentication')"
+                        }
+                      }
+                    }
+                  },
+                  "expression": {
+                    "or": [
+                      {
+                        "equals": [
+                          "@items('Apply_to_each')?['mimetype']",
+                          "application/pdf"
+                        ]
+                      },
+                      {
+                        "equals": [
+                          "@items('Apply_to_each')?['mimetype']",
+                          "image/jpeg"
+                        ]
+                      },
+                      {
+                        "equals": [
+                          "@items('Apply_to_each')?['mimetype']",
+                          "image/png"
+                        ]
+                      }
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "76dd0d0d-f1ec-4056-9766-2fd9ce31fa84"
+                  },
+                  "type": "If"
+                }
+              },
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "498d3143-4771-479e-9619-649443b8f267"
+              },
+              "type": "Foreach"
+            }
+          },
+          "runAfter": {
+            "Initialize_variable": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Terminate": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "b66281dd-9bfc-47fd-a9ff-90270b935773"
+                },
+                "type": "Terminate",
+                "inputs": {
+                  "runStatus": "Cancelled"
+                }
+              }
+            }
+          },
+          "expression": {
+            "greater": [
+              "@variables('AttachmentNumber')",
+              0
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e5e88820-3256-474a-823f-5131bd5eefe5"
+          },
+          "type": "If"
+        },
+        "Initialize_variable": {
+          "runAfter": {
+            "Initialize_AttachmentNumber": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "250732e9-73b1-4149-b4aa-b7a3214ad3e5"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "InvoiceNumber",
+                "type": "integer",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "Initialize_AttachmentNumber": {
+          "runAfter": {
+            "List_rows": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "266d9bb4-9b07-410c-981f-24e1ee7ba742"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "AttachmentNumber",
+                "type": "integer",
+                "value": "@length(outputs('List_rows')?['body/value'])"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

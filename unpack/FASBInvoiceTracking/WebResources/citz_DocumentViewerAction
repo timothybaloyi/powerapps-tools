@@ -1,0 +1,24 @@
+function OpenPreview(primaryControl) {
+
+    var formContext = primaryControl;  
+
+    var pageInput = {
+        pageType: "webresource",
+        webresourceName: "citz_DocumentViewer"
+    };
+    var navigationOptions = {
+        target: 2,
+        width: 700, // value specified in pixel
+        height: 400, // value specified in pixel
+        position: 2
+    };
+    Xrm.Navigation.navigateTo(pageInput, navigationOptions).then(
+        function success() {
+                // Run code on success
+        },
+        function error() {
+                // Handle errors
+        }
+    );
+
+}

@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.24061.176" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>FASBInvoiceTracking</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="FASB Invoice Tracking" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.0</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>CitizensServices</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="CITZ" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>citz</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>98844</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="2" />
+      <RootComponent type="1" schemaName="actioncard" behavior="2" />
+      <RootComponent type="1" schemaName="annotation" behavior="2" />
+      <RootComponent type="1" schemaName="citz_documentfieldmapping" behavior="0" />
+      <RootComponent type="1" schemaName="citz_documentmappingconfig" behavior="0" />
+      <RootComponent type="1" schemaName="citz_documentprocessingtask" behavior="0" />
+      <RootComponent type="1" schemaName="citz_invoiceitems" behavior="0" />
+      <RootComponent type="1" schemaName="citz_invoiceprocessflow" behavior="0" />
+      <RootComponent type="1" schemaName="citz_invoicerecords" behavior="0" />
+      <RootComponent type="1" schemaName="citz_suppliersite" behavior="0" />
+      <RootComponent type="1" schemaName="connection" behavior="2" />
+      <RootComponent type="1" schemaName="contact" behavior="2" />
+      <RootComponent type="1" schemaName="email" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_aimodel" behavior="1" />
+      <RootComponent type="1" schemaName="queueitem" behavior="2" />
+      <RootComponent type="1" schemaName="syncerror" behavior="2" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="29" id="{54ae097d-fb1c-ef11-840a-6045bd622e2d}" behavior="0" />
+      <RootComponent type="29" id="{82a9f26e-1eea-ee11-a203-6045bd5efa07}" behavior="0" />
+      <RootComponent type="29" id="{e7c51519-d8e6-ee11-a203-002248aff134}" behavior="0" />
+      <RootComponent type="29" id="{ea673de4-37e6-ee11-a203-002248aff134}" behavior="0" />
+      <RootComponent type="29" id="{fee84ac4-cce6-ee11-a203-002248aff134}" behavior="0" />
+      <RootComponent type="60" id="{aac764e0-2ce6-ee11-a203-002248aff134}" behavior="0" />
+      <RootComponent type="61" schemaName="citz_DocumentViewer" behavior="0" />
+      <RootComponent type="61" schemaName="citz_DocumentViewerAction" behavior="0" />
+      <RootComponent type="62" schemaName="citz_InvoiceTrackingApp" behavior="0" />
+      <RootComponent type="80" schemaName="citz_InvoiceTrackingApp" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="aib_documentautomationconfiguration" displayName="Document Automation Configuration" solution="Documentautomationbasekit (202109.1.0303.0)">
+          <package>Documentautomationbasekit (202109.1.0303.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aib_documentautomationdata" displayName="Document Automation Data" solution="Documentautomationbasekit (202109.1.0303.0)">
+          <package>Documentautomationbasekit (202109.1.0303.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aib_documentautomationprocessing" displayName="Document Automation Processing" solution="Documentautomationbasekit (202109.1.0303.0)">
+          <package>Documentautomationbasekit (202109.1.0303.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aib_documentautomationtabledata" displayName="Document Automation Table Data" solution="Documentautomationbasekit (202109.1.0303.0)">
+          <package>Documentautomationbasekit (202109.1.0303.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aib_documentautomationtabletaxonomy" displayName="Document Automation Table Taxonomy" solution="Documentautomationbasekit (202109.1.0303.0)">
+          <package>Documentautomationbasekit (202109.1.0303.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aib_documentautomationtaxonomy" displayName="Document Automation Taxonomy" solution="Documentautomationbasekit (202109.1.0303.0)">
+          <package>Documentautomationbasekit (202109.1.0303.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_aimodel" displayName="AI Model" solution="msdyn_AISolution (202405.1.0.1)">
+          <package>msdyn_AISolutionAnchor (202405.1.0.1)</package>
+        </Required>
+        <Dependent type="1" schemaName="msdyn_aimodel" displayName="AI Model" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_aimodel" displayName="AI Model" solution="msdyn_AISolution (202405.1.0.1)">
+          <package>msdyn_AISolutionAnchor (202405.1.0.1)</package>
+        </Required>
+        <Dependent type="29" displayName="Document Processing Task File Processor" id="{82a9f26e-1eea-ee11-a203-6045bd5efa07}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_aimodel" displayName="AI Model" solution="msdyn_AISolution (202405.1.0.1)">
+          <package>msdyn_AISolutionAnchor (202405.1.0.1)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="acceptingentityid" displayName="Accepting Entity" parentSchemaName="email" parentDisplayName="Email" solution="msft_ActivitiesInfra_Extensions (9.2.0.59)" />
+        <Dependent type="2" schemaName="acceptingentityid" displayName="Accepting Entity" parentSchemaName="email" parentDisplayName="Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_confirmremovepassword" displayName="Confirm Remove Password" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_confirmremovepassword" displayName="Confirm Remove Password" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_createdbyipaddress" displayName="Created By IP Address" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_createdbyipaddress" displayName="Created By IP Address" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_createdbyusername" displayName="Created By Username" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_createdbyusername" displayName="Created By Username" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_accessfailedcount" displayName="Access Failed Count" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_accessfailedcount" displayName="Access Failed Count" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_emailaddress1confirmed" displayName="Email Confirmed" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_emailaddress1confirmed" displayName="Email Confirmed" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_lastsuccessfullogin" displayName="Last Successful Login" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_lastsuccessfullogin" displayName="Last Successful Login" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_locallogindisabled" displayName="Local Login Disabled" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_locallogindisabled" displayName="Local Login Disabled" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_lockoutenabled" displayName="Lockout Enabled" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_lockoutenabled" displayName="Lockout Enabled" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_lockoutenddate" displayName="Lockout End Date" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_lockoutenddate" displayName="Lockout End Date" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_logonenabled" displayName="Login Enabled" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_logonenabled" displayName="Login Enabled" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_mobilephoneconfirmed" displayName="Mobile Phone Confirmed" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_mobilephoneconfirmed" displayName="Mobile Phone Confirmed" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_newpassword" displayName="New Password Input" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_newpassword" displayName="New Password Input" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_passwordhash" displayName="Password Hash" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_passwordhash" displayName="Password Hash" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_identity_securitystamp" displayName="Security Stamp" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_identity_securitystamp" displayName="Security Stamp" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_modifiedbyipaddress" displayName="Modified By IP Address" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_modifiedbyipaddress" displayName="Modified By IP Address" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_modifiedbyusername" displayName="Modified By Username" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_modifiedbyusername" displayName="Modified By Username" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_organizationname" displayName="Organization Name" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_organizationname" displayName="Organization Name" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_preferredlcid" displayName="Preferred LCID (Deprecated)" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_preferredlcid" displayName="Preferred LCID (Deprecated)" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_profilealert" displayName="Profile Alert" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_profilealert" displayName="Profile Alert" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_profilealertdate" displayName="Profile Alert Date" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_profilealertdate" displayName="Profile Alert Date" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_profilealertinstructions" displayName="Profile Alert Instructions" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_profilealertinstructions" displayName="Profile Alert Instructions" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_profileisanonymous" displayName="Profile Is Anonymous" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_profileisanonymous" displayName="Profile Is Anonymous" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_profilelastactivity" displayName="Profile Last Activity" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_profilelastactivity" displayName="Profile Last Activity" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_profilemodifiedon" displayName="Profile Modified On" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_profilemodifiedon" displayName="Profile Modified On" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_publicprofilecopy" displayName="Public Profile Copy" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCore (1.0.2402.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="adx_publicprofilecopy" displayName="Public Profile Copy" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_managingpartnerid" displayName="Managing Partner" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeCoreDependencies (1.0.2305.1)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="msa_managingpartnerid" displayName="Managing Partner" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_disablewebtracking" displayName="Disable Web Tracking" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_PortalPrivacyExtensions (9.2.10.0)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="msdyn_disablewebtracking" displayName="Disable Web Tracking" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_isminor" displayName="Is Minor" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_PortalPrivacyExtensions (9.2.10.0)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="msdyn_isminor" displayName="Is Minor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_isminorwithparentalconsent" displayName="Is Minor with Parental Consent" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_PortalPrivacyExtensions (9.2.10.0)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="msdyn_isminorwithparentalconsent" displayName="Is Minor with Parental Consent" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_aimodel" parentDisplayName="AI Model" solution="msdyn_AISolution (202405.1.0.1)">
+          <package>msdyn_AISolutionAnchor (202405.1.0.1)</package>
+        </Required>
+        <Dependent type="10" schemaName="citz_documentfieldmapping_AIModel_msdyn_aimode" displayName="citz_documentfieldmapping_AIModel_msdyn_aimode" parentSchemaName="msdyn_aimodel" parentDisplayName="AI Model" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_aimodel" parentDisplayName="AI Model" solution="msdyn_AISolution (202405.1.0.1)">
+          <package>msdyn_AISolutionAnchor (202405.1.0.1)</package>
+        </Required>
+        <Dependent type="10" schemaName="citz_documentmappingconfig_AIModel_msdyn_aimod" displayName="citz_documentmappingconfig_AIModel_msdyn_aimod" parentSchemaName="msdyn_aimodel" parentDisplayName="AI Model" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_portaltermsagreementdate" displayName="Portal Terms Agreement Date" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_PortalPrivacyExtensions (9.2.10.0)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="msdyn_portaltermsagreementdate" displayName="Portal Terms Agreement Date" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="mspp_userpreferredlcid" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" solution="PowerPages_RuntimeExtensions (1.0.2404.2)">
+          <package>PowerPages_Core (1.0.2405.98)</package>
+        </Required>
+        <Dependent type="2" schemaName="mspp_userpreferredlcid" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="reservedforinternaluse" displayName="Reserved for internal use" parentSchemaName="email" parentDisplayName="Email" solution="msdynce_ActivitiesPatch (9.0.24055.240524001)" />
+        <Dependent type="2" schemaName="reservedforinternaluse" displayName="Reserved for internal use" parentSchemaName="email" parentDisplayName="Email" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}">
+          <package>msdynce_AppCommonAnchor (9.0.24054.10001)</package>
+        </Required>
+        <Dependent type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}">
+          <package>msdynce_AppCommonAnchor (9.0.24054.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Email" parentDisplayName="Email" solution="msdynce_Activities (9.0.1.2033)" id="{0d1e47ff-12b2-4f53-9090-bee951b98cb4}" />
+        <Dependent type="60" displayName="Email" parentDisplayName="Email" id="{0d1e47ff-12b2-4f53-9090-bee951b98cb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}">
+          <package>msdynce_AppCommonAnchor (9.0.24054.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact" parentDisplayName="Contact" id="{1fed44d1-ae68-4a41-bd2b-f13acac4acfa}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package>msdynce_AppCommonAnchor (9.0.24054.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="account contact card" parentDisplayName="Contact" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Create" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}">
+          <package>msdynce_AppCommonAnchor (9.0.24054.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact Quick Create" parentDisplayName="Contact" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}">
+          <package>msdynce_AppCommonAnchor (9.0.24054.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Form" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}">
+          <package>msdynce_AppCommonAnchor (9.0.24054.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Contact Quick Form" parentDisplayName="Contact" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="citz_InvoiceTrackingApp" displayName="Invoice Tracking App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2406.1010)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Invoice Records" id="{5350e76f-0cb3-448f-90bd-039b0d28381a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="SettingDefinition" displayName="AppChannel" solution="msdyn_AppFrameworkInfraExtensions (1.0.0.10)" id.uniquename="AppChannel" />
+        <Dependent type="AppSetting" displayName="parentappmoduleid.uniquename=citz_InvoiceTrackingApp,settingdefinitionid.uniquename=AppChannel" id.parentappmoduleid.uniquename="citz_InvoiceTrackingApp" id.settingdefinitionid.uniquename="AppChannel" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

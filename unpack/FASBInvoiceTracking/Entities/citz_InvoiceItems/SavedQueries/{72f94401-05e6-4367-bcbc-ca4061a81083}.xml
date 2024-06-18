@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{72f94401-05e6-4367-bcbc-ca4061a81083}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="citz_number" select="1" icon="1" preview="1">
+        <row name="result" id="citz_invoiceitemsid">
+          <cell name="citz_amountincludingtax" width="177" />
+          <cell name="citz_pretaxamount" width="134" />
+          <cell name="citz_pstamount" width="114" />
+          <cell name="citz_gstamount" width="116" />
+          <cell name="citz_client" width="100" />
+          <cell name="citz_resp" width="100" />
+          <cell name="citz_serviceline" width="112" />
+          <cell name="citz_stob" width="100" />
+          <cell name="citz_project" width="100" />
+          <cell name="citz_ofastobasset" width="174" />
+          <cell name="citz_poline" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="citz_invoiceitems">
+          <attribute name="citz_invoiceitemsid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="citz_amountincludingtax" />
+          <attribute name="citz_pretaxamount" />
+          <attribute name="citz_pstamount" />
+          <attribute name="citz_gstamount" />
+          <attribute name="citz_client" />
+          <attribute name="citz_resp" />
+          <attribute name="citz_serviceline" />
+          <attribute name="citz_stob" />
+          <attribute name="citz_project" />
+          <attribute name="citz_ofastobasset" />
+          <attribute name="citz_poline" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Invoice Items" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

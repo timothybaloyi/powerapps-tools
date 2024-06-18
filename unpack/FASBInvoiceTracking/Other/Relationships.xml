@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="account_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="Account_Emails" unmodified="1" />
+  <EntityRelationship Name="activity_pointer_citz_DocumentProcessingTask" />
+  <EntityRelationship Name="adx_invitation_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="adx_invitation_Emails" />
+  <EntityRelationship Name="bpf_citz_invoicerecords_citz_invoiceprocessflow" />
+  <EntityRelationship Name="business_unit_citz_documentfieldmapping" />
+  <EntityRelationship Name="business_unit_citz_documentmappingconfig" />
+  <EntityRelationship Name="business_unit_citz_invoiceitems" />
+  <EntityRelationship Name="business_unit_citz_invoicerecords" />
+  <EntityRelationship Name="business_unit_citz_suppliersite" />
+  <EntityRelationship Name="business_unit_email_activities" unmodified="1" />
+  <EntityRelationship Name="citz_documentfieldmapping_AIModel_msdyn_aimode" />
+  <EntityRelationship Name="citz_documentmappingconfig_AIModel_msdyn_aimod" />
+  <EntityRelationship Name="citz_documentprocessingtask_businessunit_owningbusinessunit" />
+  <EntityRelationship Name="citz_documentprocessingtask_mailbox_sendermailboxid" />
+  <EntityRelationship Name="citz_documentprocessingtask_owner_ownerid" />
+  <EntityRelationship Name="citz_documentprocessingtask_sla_slaid" />
+  <EntityRelationship Name="citz_documentprocessingtask_sla_slainvokedid" />
+  <EntityRelationship Name="citz_documentprocessingtask_systemuser_createdby" />
+  <EntityRelationship Name="citz_documentprocessingtask_systemuser_modifiedby" />
+  <EntityRelationship Name="citz_documentprocessingtask_systemuser_owninguser" />
+  <EntityRelationship Name="citz_documentprocessingtask_team_owningteam" />
+  <EntityRelationship Name="citz_invoiceitems_Invoice_citz_invoicerecords" />
+  <EntityRelationship Name="citz_invoicerecords_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="citz_invoicerecords_Emails" />
+  <EntityRelationship Name="citz_invoicerecords_ExpenseAuthority_contact" />
+  <EntityRelationship Name="citz_invoicerecords_QualifiedReciever_contact" />
+  <EntityRelationship Name="citz_invoicerecords_Supplier_account" />
+  <EntityRelationship Name="citz_invoicerecords_SupplierSite_citz_supplier" />
+  <EntityRelationship Name="citz_suppliersite_Supplier_account" />
+  <EntityRelationship Name="contact_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="Contact_Emails" unmodified="1" />
+  <EntityRelationship Name="email_actioncard" unmodified="1" />
+  <EntityRelationship Name="Email_Annotation" unmodified="1" />
+  <EntityRelationship Name="email_connections1" unmodified="1" />
+  <EntityRelationship Name="email_connections2" unmodified="1" />
+  <EntityRelationship Name="email_email_parentactivityid" unmodified="1" />
+  <EntityRelationship Name="Email_EmailTemplate" unmodified="1" />
+  <EntityRelationship Name="Email_SyncErrors" unmodified="1" />
+  <EntityRelationship Name="FileAttachment_citz_DocumentProcessingTask_citz_FileData" />
+  <EntityRelationship Name="FileAttachment_citz_InvoiceRecords_citz_InvoiceFile" />
+  <EntityRelationship Name="interactionforemail_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="knowledgearticle_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="knowledgebaserecord_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="lk_citz_documentfieldmapping_createdby" />
+  <EntityRelationship Name="lk_citz_documentfieldmapping_modifiedby" />
+  <EntityRelationship Name="lk_citz_documentmappingconfig_createdby" />
+  <EntityRelationship Name="lk_citz_documentmappingconfig_modifiedby" />
+  <EntityRelationship Name="lk_citz_invoiceitems_createdby" />
+  <EntityRelationship Name="lk_citz_invoiceitems_modifiedby" />
+  <EntityRelationship Name="lk_citz_invoiceprocessflow_activestageid" />
+  <EntityRelationship Name="lk_citz_invoiceprocessflow_createdby" />
+  <EntityRelationship Name="lk_citz_invoiceprocessflow_modifiedby" />
+  <EntityRelationship Name="lk_citz_invoiceprocessflow_processid" />
+  <EntityRelationship Name="lk_citz_invoicerecords_createdby" />
+  <EntityRelationship Name="lk_citz_invoicerecords_modifiedby" />
+  <EntityRelationship Name="lk_citz_suppliersite_createdby" />
+  <EntityRelationship Name="lk_citz_suppliersite_modifiedby" />
+  <EntityRelationship Name="lk_email_createdby" unmodified="1" />
+  <EntityRelationship Name="lk_email_modifiedby" unmodified="1" />
+  <EntityRelationship Name="mspp_adplacement_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="mspp_adplacement_Emails" />
+  <EntityRelationship Name="mspp_pollplacement_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="mspp_pollplacement_Emails" />
+  <EntityRelationship Name="mspp_publishingstatetransitionrule_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="mspp_publishingstatetransitionrule_Emails" />
+  <EntityRelationship Name="mspp_redirect_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="mspp_redirect_Emails" />
+  <EntityRelationship Name="mspp_shortcut_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="mspp_shortcut_Emails" />
+  <EntityRelationship Name="mspp_website_citz_DocumentProcessingTasks" />
+  <EntityRelationship Name="mspp_website_Emails" />
+  <EntityRelationship Name="organization_citz_invoiceprocessflow" />
+  <EntityRelationship Name="owner_citz_documentfieldmapping" />
+  <EntityRelationship Name="owner_citz_documentmappingconfig" />
+  <EntityRelationship Name="owner_citz_invoiceitems" />
+  <EntityRelationship Name="owner_citz_invoicerecords" />
+  <EntityRelationship Name="owner_citz_suppliersite" />
+  <EntityRelationship Name="team_citz_documentfieldmapping" />
+  <EntityRelationship Name="team_citz_documentmappingconfig" />
+  <EntityRelationship Name="team_citz_invoiceitems" />
+  <EntityRelationship Name="team_citz_invoicerecords" />
+  <EntityRelationship Name="team_citz_suppliersite" />
+  <EntityRelationship Name="team_email" unmodified="1" />
+  <EntityRelationship Name="TransactionCurrency_citz_InvoiceItems" />
+  <EntityRelationship Name="TransactionCurrency_citz_InvoiceRecords" />
+  <EntityRelationship Name="user_citz_documentfieldmapping" />
+  <EntityRelationship Name="user_citz_documentmappingconfig" />
+  <EntityRelationship Name="user_citz_invoiceitems" />
+  <EntityRelationship Name="user_citz_invoicerecords" />
+  <EntityRelationship Name="user_citz_suppliersite" />
+  <EntityRelationship Name="user_email" unmodified="1" />
+</EntityRelationships>

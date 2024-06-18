@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{04afff36-2346-400a-8dcb-e5b7adecbd3e}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{f5f1b4f3-a790-4d9f-a7dd-4a31b43bd620}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{b6fc7f35-7222-4b21-b86f-9ab31c16d910}">
+          <labels>
+            <label description="Capture &amp; Coding" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{a75dd7e4-6ced-d479-07bc-bf1e6525094a}" name="StageStep3_section1" labelid="{35178a4b-e4bc-427c-a0b1-e3781f2c1c33}">
+                  <labels>
+                    <label description="Capture &amp; Coding" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c8f9646f-8578-4219-89aa-0b0ada952647}" showlabel="true" visible="true" labelid="{c75c06eb-ba21-4edb-8b70-06511bd4e68e}">
+                        <labels>
+                          <label description="Invoice Type" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoicetype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="citz_invoicetype" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{397fd240-977f-455e-bb32-0bec0d9adae4}" showlabel="true" visible="true" labelid="{9a07c9e5-1169-4bb0-9191-2a014e895148}">
+                        <labels>
+                          <label description="Invoice Number" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoicenumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="citz_invoicenumber" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8911e57a-70a8-449f-971b-f9fcb65ac938}" showlabel="true" visible="true" labelid="{77488ffa-02c4-4cc3-864e-ff644767f660}">
+                        <labels>
+                          <label description="Invoice Date" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoicedate" classid="{5b773807-9fb2-42db-97c3-7a91eff8adff}" datafieldname="citz_invoicedate" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38b164ad-d02c-4168-9ded-cc56731197e4}" showlabel="true" visible="true" labelid="{485aae38-e4b7-4dda-9a62-a198feb4384b}">
+                        <labels>
+                          <label description="Invoice Amount" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoiceamount" classid="{533b9e00-756b-4312-95a0-dc888637ac78}" datafieldname="citz_invoiceamount" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{3fefc332-3416-44fb-837f-d514245beafc}" name="StageStep13" locklevel="0" expanded="true" visible="false" labelid="{9442ddd0-7208-4e01-b8bf-8c5c29749ad8}">
+          <labels>
+            <label description="Verify &amp; Approve" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{d98db41d-fa76-048a-dce0-9a32d23466a2}" name="StageStep13_section1" labelid="{659de756-5c68-48a5-9a1f-407d9ba710dc}">
+                  <labels>
+                    <label description="Verify &amp; Approve" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{be48fdcb-07be-4b12-bf78-fdcbfd342913}" showlabel="true" visible="true" labelid="{5c30ebcc-bcd2-42aa-8373-819cbbe4bd93}">
+                        <labels>
+                          <label description="Verified" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoicetype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="citz_invoicetype" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a736c82-91f6-4d56-834d-c2eed55ec469}" showlabel="true" visible="true" labelid="{7570740b-c80c-47e8-ba66-0772c3f2fc0a}">
+                        <labels>
+                          <label description="Approved" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoicetype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="citz_invoicetype" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{1acb5393-6f4d-47d6-b7e5-91c40e491c99}" name="StageStep19" locklevel="0" expanded="true" visible="false" labelid="{e7ad2231-6d71-424b-afe1-3fcf47fa149b}">
+          <labels>
+            <label description="Batch &amp; Load (CAS)" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{f48a5491-6e5a-0f3b-6dca-c9bae723199f}" name="StageStep19_section1" labelid="{c9d0c8de-7133-4343-be6e-90de543b00f0}">
+                  <labels>
+                    <label description="Batch &amp; Load (CAS)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bd486fb6-29c8-472b-be07-8bcf1dee5121}" showlabel="true" visible="true" labelid="{524ae076-012c-45fb-aa3b-d0ce24be67b2}">
+                        <labels>
+                          <label description="Sent to CAS" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoicetype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="citz_invoicetype" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{4557953a-4def-4547-94c1-74b4467d8ebb}" name="StageStep23" locklevel="0" expanded="true" visible="false" labelid="{fd47de73-1e08-4819-b157-dd662d5aeeb2}">
+          <labels>
+            <label description="Authorize For Payment" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{189b72d9-61b5-a7b9-1ca2-8e7ce2982b14}" name="StageStep23_section1" labelid="{2facaf63-1783-4661-93a5-8834dfacc0b0}">
+                  <labels>
+                    <label description="Authorize For Payment" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3b279cd4-db15-45e4-99b8-9f4302cac092}" showlabel="true" visible="true" labelid="{182dd843-c1ce-44f5-bdbb-d42e83c1bbee}">
+                        <labels>
+                          <label description="Authorized" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:citz_invoicetype" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="citz_invoicetype" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{1164125d-b528-4b04-9007-2b133c9a3617}" name="StageStep27" locklevel="0" expanded="true" visible="false" labelid="{4538c1b2-fbb5-4a21-a648-074c353ec8ba}">
+          <labels>
+            <label description="Archive For Audit" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{0e59dfc3-e541-556b-d6f4-cdf0c6cdd908}" name="StageStep27_section1" labelid="{23cf0d6e-670c-4df6-aad8-77afa6386d7c}">
+                  <labels>
+                    <label description="Archive For Audit" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4b93d878-fb85-4fea-a839-07d7b0d45f66}" showlabel="true" visible="true" labelid="{419ac161-1fb0-4050-b48e-135c52737920}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_citz_invoicerecords_citz_invoiceprocessflow:statuscode" classid="{5d68b988-0661-4db2-bc3e-17598ad3be6c}" datafieldname="statuscode" relationship="bpf_citz_invoicerecords_citz_invoiceprocessflow" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

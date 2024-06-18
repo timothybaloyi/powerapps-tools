@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>citz_InvoiceTrackingApp</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="activitypointer" />
+    <AppModuleComponent type="1" schemaName="aib_documentautomationconfiguration" />
+    <AppModuleComponent type="1" schemaName="aib_documentautomationdata" />
+    <AppModuleComponent type="1" schemaName="aib_documentautomationprocessing" />
+    <AppModuleComponent type="1" schemaName="aib_documentautomationtabledata" />
+    <AppModuleComponent type="1" schemaName="aib_documentautomationtabletaxonomy" />
+    <AppModuleComponent type="1" schemaName="aib_documentautomationtaxonomy" />
+    <AppModuleComponent type="1" schemaName="annotation" />
+    <AppModuleComponent type="1" schemaName="citz_documentprocessingtask" />
+    <AppModuleComponent type="1" schemaName="citz_invoicerecords" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="1" schemaName="convertrule" />
+    <AppModuleComponent type="1" schemaName="email" />
+    <AppModuleComponent type="1" schemaName="importmap" />
+    <AppModuleComponent type="1" schemaName="msdyn_aimodel" />
+    <AppModuleComponent type="1" schemaName="queue" />
+    <AppModuleComponent type="1" schemaName="queueitem" />
+    <AppModuleComponent type="1" schemaName="systemuser" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000000666400}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001003}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001004}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001033}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001210}" />
+    <AppModuleComponent type="26" id="{f46a0eb4-32e6-ee11-a203-002248aff134}" />
+    <AppModuleComponent type="26" id="{413e86cf-32e6-ee11-a203-002248aff134}" />
+    <AppModuleComponent type="26" id="{a7699802-33e6-ee11-a203-002248aff134}" />
+    <AppModuleComponent type="26" id="{9818766e-7172-4d59-9279-013835c3decd}" />
+    <AppModuleComponent type="26" id="{0a8fa653-4147-4282-bf6b-168cfa839803}" />
+    <AppModuleComponent type="26" id="{14ea1914-0e2c-4918-8eca-60930324f18f}" />
+    <AppModuleComponent type="26" id="{ab582fb0-a846-453e-ad88-77f75ce91264}" />
+    <AppModuleComponent type="26" id="{a2d479c5-53e3-4c69-addd-802327e67a0d}" />
+    <AppModuleComponent type="26" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+    <AppModuleComponent type="26" id="{927e6cd8-b3ed-4c20-a154-b8bd8a86d172}" />
+    <AppModuleComponent type="26" id="{58fb20ff-d5be-406f-908e-c777e9dedf5f}" />
+    <AppModuleComponent type="26" id="{9c241a33-ca0b-4e50-ae92-db780d5b2a12}" />
+    <AppModuleComponent type="26" id="{73bc2d9b-4e0e-424c-8839-ed59d6817e3a}" />
+    <AppModuleComponent type="26" id="{8df19b44-a073-40c3-9d6d-ee1355d8c4ba}" />
+    <AppModuleComponent type="26" id="{eda26f1e-dbcc-40ad-91f2-ff2878d1d8d8}" />
+    <AppModuleComponent type="60" id="{ee50a18b-3f88-df11-8d93-00155db1891a}" />
+    <AppModuleComponent type="60" id="{aac764e0-2ce6-ee11-a203-002248aff134}" />
+    <AppModuleComponent type="62" schemaName="citz_InvoiceTrackingApp" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Invoice Tracking App" languagecode="1033" />
+  </LocalizedNames>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="AppChannel">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+  </appsettings>
+</AppModule>

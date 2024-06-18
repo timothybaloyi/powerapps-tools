@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="citz.citz_invoicerecords.Button2.Button.CustomAction" Location="Mscrm.Form.citz_invoicerecords.MainTab.Save.Controls._children" Sequence="85">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:citz.citz_invoicerecords.Button2.Button.Alt" Command="citz.citz_invoicerecords.Command0.Command" Id="citz.citz_invoicerecords.Button2.Button" Image32by32="/_imgs/FormEditorRibbon/FormPreview_32.png" Image16by16="/_imgs/FormEditorRibbon/FormPreview_16.png" LabelText="$LocLabels:citz.citz_invoicerecords.Button2.Button.LabelText" Sequence="85" TemplateAlias="isv" ToolTipTitle="$LocLabels:citz.citz_invoicerecords.Button2.Button.ToolTipTitle" ToolTipDescription="$LocLabels:citz.citz_invoicerecords.Button2.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="citz.citz_invoicerecords.Command0.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="OpenPreview" Library="$webresource:citz_DocumentViewerAction">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="citz.citz_invoicerecords.Button2.Button.Alt">
+      <Titles>
+        <Title description="Preview" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="citz.citz_invoicerecords.Button2.Button.LabelText">
+      <Titles>
+        <Title description="Preview" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="citz.citz_invoicerecords.Button2.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Preview Invoice" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="citz.citz_invoicerecords.Button2.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Preview" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

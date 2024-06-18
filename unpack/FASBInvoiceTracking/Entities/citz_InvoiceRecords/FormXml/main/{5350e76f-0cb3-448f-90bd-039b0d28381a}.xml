@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5350e76f-0cb3-448f-90bd-039b0d28381a}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{e6a85629-e45e-49c7-89b1-f99e2557ae80}" IsUserDefined="1" name="General">
+          <labels>
+            <label description="Invoice Coding" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="General_section_3" id="f6a3ff09-1bc7-4fd4-8764-2f3ae2cda65e" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="111" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{5c65f3ba-a341-4913-924b-a52f2585d62c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{4c742bba-8970-4d05-a550-95de64bd74e8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{79d5fce4-61bb-4f70-9f72-950fc609f00e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e8f90258-ca00-4939-83fb-14bd01880cbc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Invoice Type" languagecode="1033" />
+                        </labels>
+                        <control id="citz_invoicetype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="citz_invoicetype" disabled="false" />
+                      </cell>
+                      <cell id="{a79eb7aa-8c7c-4d2b-9791-a52bfc256162}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Invoice Number" languagecode="1033" />
+                        </labels>
+                        <control id="citz_invoicenumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="citz_invoicenumber" />
+                      </cell>
+                      <cell id="{cf96554c-b73f-4b04-b84b-64a69cff2571}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Invoice Date" languagecode="1033" />
+                        </labels>
+                        <control id="citz_invoicedate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="citz_invoicedate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{c6636c82-cf6d-41ce-8733-8a6ee0964589}" name="General" columns="111">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f21ad4c0-d6e9-488d-bd03-cd874485df36}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Payee Name" languagecode="1033" />
+                        </labels>
+                        <control id="citz_payeename" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="citz_payeename" disabled="false" />
+                      </cell>
+                      <cell id="{8ff51ce0-adf8-471c-962a-16b01cb6d3ad}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Invoice Amount" languagecode="1033" />
+                        </labels>
+                        <control id="citz_invoiceamount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="citz_invoiceamount" disabled="false" />
+                      </cell>
+                      <cell id="{bf4083ac-4ef6-4da9-acaa-2baea2174f91}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Return Cheque to Ministry" languagecode="1033" />
+                        </labels>
+                        <control id="citz_returnchequetoministry" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="citz_returnchequetoministry" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b1f53554-992b-4e09-a999-94d08aa3aea1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Supplier" languagecode="1033" />
+                        </labels>
+                        <control id="citz_supplier" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="citz_supplier" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{26bbf751-2e8d-4f0e-ad4c-c9b5dbb60b96}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{de437d9b-3a1f-4178-86e6-b62093a7abef}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Foreign Currency/Wire Transfer Payment" languagecode="1033" />
+                        </labels>
+                        <control id="citz_foreigncurrencywiretransferpayment" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="citz_foreigncurrencywiretransferpayment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{587e8560-5ff7-440b-9995-228b63a9e1fd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Supplier Site" languagecode="1033" />
+                        </labels>
+                        <control id="citz_suppliersite" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="citz_suppliersite" disabled="false" />
+                      </cell>
+                      <cell id="{3da4fcef-9974-4656-86af-3f13b0f99cf0}" userspacer="true" showlabel="false" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{4129c4c4-5df5-4807-a372-8796d8b97c54}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is Manual Recode Required" languagecode="1033" />
+                        </labels>
+                        <control id="citz_ismanualrecoderequired" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="citz_ismanualrecoderequired" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9e13f094-cd25-4767-979a-e2311e525338}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date Invoice Received" languagecode="1033" />
+                        </labels>
+                        <control id="citz_dateinvoicereceived" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="citz_dateinvoicereceived" disabled="false" />
+                      </cell>
+                      <cell id="{39fb34af-0609-4cc6-82c1-ef704f0c7a7f}" userspacer="true" showlabel="false" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{dff7e3f4-552b-44b2-a214-00800d3b8ceb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is this a Block Supplier" languagecode="1033" />
+                        </labels>
+                        <control id="citz_isthisablocksupplier" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="citz_isthisablocksupplier" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7e110433-3a44-481f-a084-2ca9bf2c7ce7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date Goods/Service Received" languagecode="1033" />
+                        </labels>
+                        <control id="citz_dategoodsservicereceived" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="citz_dategoodsservicereceived" disabled="false" />
+                      </cell>
+                      <cell id="{e15b0259-6a3c-4353-b250-4efaa9e6e68e}" userspacer="true" showlabel="false" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{b2ed3f5c-319d-482e-b584-b66f72c6a458}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="General_section_5" id="19ffd3ef-9e34-4837-8e73-5595989e933b" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{41721739-9a0b-4934-a1c5-9e930da11cdb}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{1d96f6a5-826a-46b7-beda-6e6606a0eecd}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6acb4660-885b-4bb0-9e78-2182bfc551a1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Qualified Reciever" languagecode="1033" />
+                        </labels>
+                        <control id="citz_qualifiedreciever" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="citz_qualifiedreciever" disabled="false" />
+                      </cell>
+                      <cell id="{418bc661-64b4-4d5e-94be-160818c38ae8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Expense Authority" languagecode="1033" />
+                        </labels>
+                        <control id="citz_expenseauthority" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="citz_expenseauthority" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="General_section_4" id="e24e0866-d952-4b99-81c3-edfc89da798f" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Address Change" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                  </rows>
+                </section>
+                <section name="General_section_7" id="eb1a58b9-dc00-4e51-8874-358b8b37d468" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{d72f58e9-ca09-4409-b89a-f948a70a6711}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Cheque Stub/EFT Notification Comments" languagecode="1033" />
+                        </labels>
+                        <control id="citz_chequestubeftnotificationcomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="citz_chequestubeftnotificationcomments" disabled="false" />
+                      </cell>
+                      <cell id="{01ee4a24-9c7c-4b45-bbcf-b9c747f45815}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Pay Alone?" languagecode="1033" />
+                        </labels>
+                        <control id="citz_payalone" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="citz_payalone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{335a5852-8b8d-4302-9bbb-16a0474aa294}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Contract/PO Number" languagecode="1033" />
+                        </labels>
+                        <control id="citz_contractponumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="citz_contractponumber" disabled="false" />
+                      </cell>
+                      <cell id="{bf45e062-72df-45e9-957e-99ce8e84be47}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="IPRO Receipt Number" languagecode="1033" />
+                        </labels>
+                        <control id="citz_iproreceiptnumber" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="citz_iproreceiptnumber" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="General_section_6" id="f3557ced-1535-4d52-a606-cfc0a16ca310" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{84fa08f1-4452-4e95-99da-cf4b20869c92}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1710883436824" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{194d0ac8-9363-48b6-86db-1a21fa7c7e7f}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>citz_invoiceitems</TargetEntityType>
+                            <ViewId>{72F94401-05E6-4367-BCBC-CA4061A81083}</ViewId>
+                            <ViewIds>{72F94401-05E6-4367-BCBC-CA4061A81083}</ViewIds>
+                            <RelationshipName>citz_invoiceitems_Invoice_citz_invoicerecords</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="ab67fb37-aeaa-4325-89a5-60bb51926c67" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Activities &amp; Attachments" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" id="6341392f-2ee4-41fd-8888-9c835c590d61" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{f8c0b4f0-4a0a-4577-a083-a467321ccf6b}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1710959457339" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>annotation</TargetEntityType>
+                            <ViewId>{8A9A0D47-51AC-454E-98C4-B3CF4EF50F2B}</ViewId>
+                            <ViewIds>{8A9A0D47-51AC-454E-98C4-B3CF4EF50F2B}</ViewIds>
+                            <RelationshipName>citz_invoicerecords_Annotations</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{cb49acbd-da62-4eba-90c4-41709a4a3708}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{713a911f-51a0-4558-8b32-455a07be32ae}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{051ec2cf-348f-45cf-a981-3fc539b6f45c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0c6df72d-28e3-4981-8264-6b67d9341522}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{210d3091-67dc-4606-b116-0bbd2f66107c}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+            <cell id="{b8e1f3b9-9b1b-4767-bdbe-a4e1c358ebe6}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Invoice File" languagecode="1033" />
+              </labels>
+              <control id="header_citz_invoicefile" classid="{0A7FF475-B016-4687-9CE5-042BFDBD6519}" datafieldname="citz_invoicefile" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{36bf9024-9fa2-40f7-992a-afaaffb9baea}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2fb362bc-c070-4707-8e24-1204cb9350b6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5880d270-3840-4a0b-b7a4-25211d511ff2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b2046b39-7ada-4dea-bf7e-a521cc749d3c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{194d0ac8-9363-48b6-86db-1a21fa7c7e7f}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters>
+              <RecordsPerPage>4</RecordsPerPage>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <EnableChartPicker>true</EnableChartPicker>
+              <ChartGridMode>All</ChartGridMode>
+              <TargetEntityType>citz_invoiceitems</TargetEntityType>
+              <ViewId>{72F94401-05E6-4367-BCBC-CA4061A81083}</ViewId>
+              <ViewIds>{72F94401-05E6-4367-BCBC-CA4061A81083}</ViewIds>
+              <RelationshipName>citz_invoiceitems_Invoice_citz_invoicerecords</RelationshipName>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{72f94401-05e6-4367-bcbc-ca4061a81083}</ViewId>
+                <TargetEntityType>citz_invoiceitems</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>citz_invoiceitems_Invoice_citz_invoicerecords</RelationshipName>
+                <FilteredViewIds>{72F94401-05E6-4367-BCBC-CA4061A81083}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy type="Enum" static="true">no</EnableGroupBy>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <ReflowBehavior type="Enum" static="true">GridOnly</ReflowBehavior>
+              <ListLayoutDirection type="Enum" static="true">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse type="Enum" static="true">false</EnableSubGridAutoCollapse>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <HideNestedGridColumnHeader type="Enum" static="true">no</HideNestedGridColumnHeader>
+              <EnableJumpBar type="Enum" static="true">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{72f94401-05e6-4367-bcbc-ca4061a81083}</ViewId>
+                <TargetEntityType>citz_invoiceitems</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>citz_invoiceitems_Invoice_citz_invoicerecords</RelationshipName>
+                <FilteredViewIds>{72F94401-05E6-4367-BCBC-CA4061A81083}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy type="Enum" static="true">no</EnableGroupBy>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <ReflowBehavior type="Enum" static="true">GridOnly</ReflowBehavior>
+              <ListLayoutDirection type="Enum" static="true">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse type="Enum" static="true">false</EnableSubGridAutoCollapse>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <HideNestedGridColumnHeader type="Enum" static="true">no</HideNestedGridColumnHeader>
+              <EnableJumpBar type="Enum" static="true">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{72f94401-05e6-4367-bcbc-ca4061a81083}</ViewId>
+                <TargetEntityType>citz_invoiceitems</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>citz_invoiceitems_Invoice_citz_invoicerecords</RelationshipName>
+                <FilteredViewIds>{72F94401-05E6-4367-BCBC-CA4061A81083}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy type="Enum" static="true">no</EnableGroupBy>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <ReflowBehavior type="Enum" static="true">GridOnly</ReflowBehavior>
+              <ListLayoutDirection type="Enum" static="true">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse type="Enum" static="true">false</EnableSubGridAutoCollapse>
+              <EnableFiltering type="Enum" static="true">yes</EnableFiltering>
+              <HideNestedGridColumnHeader type="Enum" static="true">no</HideNestedGridColumnHeader>
+              <EnableJumpBar type="Enum" static="true">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

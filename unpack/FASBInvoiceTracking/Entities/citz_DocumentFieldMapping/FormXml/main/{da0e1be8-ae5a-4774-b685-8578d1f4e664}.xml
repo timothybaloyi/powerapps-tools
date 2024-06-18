@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{da0e1be8-ae5a-4774-b685-8578d1f4e664}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{9b5568d3-e793-4c43-b4ca-b77a8360328e}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{ca6fcfd2-5591-46b3-bf6a-da38b1fd90c9}" name="General" columns="11">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7f56e187-87c0-48b1-9f83-64c840729150}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="AI Model" languagecode="1033" />
+                        </labels>
+                        <control id="citz_aimodel" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="citz_aimodel" disabled="false" />
+                      </cell>
+                      <cell id="{c3c57c42-835c-4fc1-a08a-5037a1691258}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Is Table Row" languagecode="1033" />
+                        </labels>
+                        <control id="citz_istablerow" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="citz_istablerow" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1186a6ae-c96a-46df-a083-c172d694c9fd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Target Table" languagecode="1033" />
+                        </labels>
+                        <control id="citz_targettable" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="citz_targettable" disabled="false" />
+                      </cell>
+                      <cell id="{c9361b19-5fad-49c5-90a1-662390ec2fbe}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Field Type" languagecode="1033" />
+                        </labels>
+                        <control id="citz_fieldtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="citz_fieldtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{17fd15af-24aa-4d62-873e-50ba156e8fde}">
+                        <labels>
+                          <label description="Source Name" languagecode="1033" />
+                        </labels>
+                        <control id="citz_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="citz_name" />
+                      </cell>
+                      <cell id="{9af0bcad-32cb-4c21-9735-625a9c253050}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Target Field Name" languagecode="1033" />
+                        </labels>
+                        <control id="citz_targetfieldname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="citz_targetfieldname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4d3dd3a-a03b-475b-aaf3-22df1195f9f7}" userspacer="true" showlabel="false" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{4ab037d1-9bfd-416b-b9e9-a6b2dda8c305}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lookup Field Table" languagecode="1033" />
+                        </labels>
+                        <control id="citz_lookupfieldtable" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="citz_lookupfieldtable" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{588e122a-5102-4066-ad57-18becc1f5d5f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{cddd947b-0a4e-4d02-83ef-6bc77b627925}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{38e1399c-6cf1-4f75-8d11-53638777da1f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{895597b7-2de6-4a11-8a30-cf280f0ece0e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{43a0e24e-e178-46bb-97bc-195a81a88831}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{69929b16-9114-4394-8e03-2258a1377d4e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1404efcf-d067-4a18-b58a-2bec5cba3c90}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c6e404cc-67f4-453a-8e4b-960f91046c9a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e4fd8067-4546-4595-b1cb-2f14e16c91a1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,23 @@
+<html><head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script lang="javascript">
+        $(document).ready(function () {
+
+            //var docUrl = 'http%3A%2F%2Fieee802%2Eorg%3A80%2Fsecmail%2FdocIZSEwEqHFr%2Edoc';
+
+            var docUrl = "https://orgc1146975.crm3.dynamics.com/api/data/v9.0/citz_invoicerecordses(c6a4c276-56ed-ee11-a1fd-6045bd5b81ca)/citz_invoicefile/$value";
+            var embedUrl = "https://view.officeapps.live.com/op/embed.aspx?src=";
+
+            var url = embedUrl + encodeURI(docUrl);
+            $("#dviewer").attr('src', url)
+        });
+    </script>
+<meta></head>
+
+<body style="overflow-wrap: break-word;">
+    <iframe id="dviewer" src="" width="100%" height="100%" frameborder="0"></iframe>
+
+
+
+
+</body></html>
